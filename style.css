@@ -1,0 +1,45 @@
+body {
+            background-image: url("photo/p8.jpg")
+        }
+        h1 {
+            text-align: center;
+            color:red;
+        }
+        h2 {
+            margin-left: 36%;
+            color: yellow;
+        }
+      
+        p {
+            text-indent: 2px;
+            font-size: 16px;
+            line-height: 30px;
+            color: whitesmoke;
+        }
+        p4 {
+            text-indent: 2px;
+            font-size: 16px;
+            line-height: 30px;
+            color: black;
+        }
+        p3 {
+            text-indent: 2px;
+            font-size: 16px;
+            line-height: 30px;
+            color: black;
+        }
+
+        p2 {
+            color:yellow;
+           /*background-color: black;*/
+        }
+        
+        img {
+            position: relative;
+            left: 20%;
+            margin-left: -181px;
+        }
+        span {
+            color: yellowgreen;
+            background-color:aqua
+        }
