@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Web Login</title>
+    <h1> Web Login  Page Sample</h1>
+    <style>
+        h1{
+            text-align:center;
+        }
+        h1{
+            position:initial;
+        }
+        .background-color{
+            background-color:orange;
+        }
+        .background-image{
+            background-image:url(photo/ww.jpg);
+        }
+    </style>
+    <meta name="viewport" content="width=device-width,inital-device-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+</head>
+    <body><!---->
+        <form action="login.php" method="post" target="_blank" enctype="multipart/form-data"> <!--网站中的形式 action:网站中的脚本-->
+            <fieldset>
+                <legend> Basic Info</legend>
+            <label for="name">姓名: <input type="text" placeholder="写一下姓名" name="username" id="name"></label><br><br>
+            <label for="sex">性别: <input type="text" placeholder="写一下性别"name="sex" id="sex"></label> <br><br>
+            <label for="password">密码: <input type="password" placeholder="输一下密码"name="password" id="password"></label><br><br>
+            <button type="submit" formmethod="post" >Submit</button>
+            <button type="reset">Reset</button>
+            </fieldset> <br>
+
+            <!--<p> this is the fieldset that can only be visble by the clever people.</p>-->
+            <fieldset class="background-image"> <!--添加方框-->
+                <legend>Leave Your Speech:</legend><br> <!--在方框上写上文字-->
+            <textarea type="text" name="text" style="width:250px; height:95px" cols="30" required></textarea> <br><br> <!--textarea意为文字框-->
+            <button type="sumbit" formmethod="post"> Spread </button> <br><br> <!--设置按钮-->
+            </fieldset> <br>
+
+            <label> Type: <!--选择方框-->
+                <select name="type"> 
+                    <option value="A">A 号</option>
+                    <option value="B">B 号</option>
+                    <option value="C">C 号</option>
+                </select>
+            </label><br><br>
+            
+
+            <fieldset>
+                <legend> Setup time</legend>
+            <label> Time <input type="time" name="time"></label> <!--选择时间-->
+            <label> date <input type="date" name="date"></label> <br><br> <!--选择日期-->
+            <label> Month <input type="month" name="month"></label> <!--选择月份-->
+            <label> Week <input type="week" name="week"></label> <br> <br> <!--选择周期-->
+            <label> Local-date and time <input type="datetime-local" name="datetime-local"></label><br> <!--选择本地时间-->
+            <!--<button type="sumbit" name="upload" method="post">Submit</button>-->
+            </fieldset><br>
+
+            <label> click: <input type="image" src="photo/iconR.jpg" alt="mail">  </label> <br>
+            <label> click again: <input type="hidden" value="invisble" disabled></label> <br>
+
+            <fieldset>
+                <fieldset>
+            <label> Upload: <input type="file" name="max_file_size" value="9999" > </label> <br> <br>
+                    <button type="sumbit" formmethod="post" name="post"> Upload </button> 
+                </fieldset> <br>
+                <label> number: <input type="number" name="number"></label> <br> <br>
+                <input type="submit" value="sumbit">
+                
+               
+            </fieldset> <br>
+            
+            
+
+            <fieldset>
+                <legend>Register</legend>
+                <label><input type="radio" name="sex" value="male"> Male </label> <!--单选框-->
+                <label><input type="radio" name="sex" value="female" > Female </label><br><br>
+                <label for ="Question1"> First name:<input type="text" name="question" id="Question1"></label><br><br>
+                <label for="Question2"> Last name:</label><input type="text" name="Q2" id="Question2"> <br><br>
+                <link rel="stylesheet" type="text/css" href="style2.css">
+                <fieldset>
+                    <legend> Select Your Favourite Novel </legend>
+                <label> <input type="checkbox" name="novel" value="1984">1984 </label><!--checkbox选择框-->
+                <label> <input type="checkbox" name="novel" value="animal farm">Animal Farm </label>  <br> <br>
+                <label> <input type="checkbox" name="novel" value="Brand new world">Brand New World</label>
+                <label> <input type="checkbox" name="books" value="crazy like us">Crazy Like Us</label> <br><br>
+
+                <label> novel search : <input type="search" name="search-bar"></label> <!--HTML搜索输入-->
+                <button type="sumbit" period="post" name="upload"> Upload</button> <br> <br> <!--HTML按钮上传-->
+                <label> Select a color: <input type ="color" name="color"></label>
+                 
+                </fieldset>
+                <!--</fieldset>-->
+            <br>
+            <button type="submit" formmethod="post" onclick="msg()"> Upload</button> <!--[onclick=msg()] 在onclick中写入函数msg-->
+            <script>
+                function msg(){
+                    alert("Uploaded")
+                }
+            </script>
+
+
+            <select> <!--选择-->
+                <optgroup label="---NO.1 Pratice test---"> <!--select+optgroup+option-->
+                    <option value="type A">Type A </option>
+                    <option value="type B">Type B</option>               
+                 </optgroup>
+                 <optgroup label="---NO.2 Pratice test---">
+                     <option value="Type A">Type A</option>
+                     <option value="Type B">Type B</option>
+                 </optgroup>
+                 <optgroup label="---NO.3 Pratice test---">
+                     <option label="Type A">Type A</option>
+                     <option label="Type B">Type B</option>
+                     <option label="Type C">Type C</option>
+                 </optgroup>
+            </select>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -6,8 +6,9 @@ body {
             color:red;
         }
         h2 {
-            margin-left: 36%;
+            /*margin-left: 36%;*/
             color: yellow;
+            text-align:center;
         }
 
         p {
@@ -15,6 +16,7 @@ body {
             font-size: 16px;
             line-height: 30px;
             color: whitesmoke;
+            
         }
         ins {
             text-indent: 2px;
@@ -27,6 +29,12 @@ body {
             font-size: 16px;
             line-height: 30px;
             color: white;
+        }
+        p4{
+            text-indent:2px;
+            font-size: 16px;
+            line-height: 30px;
+            color:black;
         }
 
         p2 {
@@ -43,6 +51,48 @@ body {
             color: yellow;
             /*background-color:aqua*/
         }
-        address{
+        /*address{
             background:greenyellow;
+        }*/
+        table{
+            border: 1px solid yellowgreen;
+            border-collapse: collapse;
         }
+        th{
+            border: 1px solid yellowgreen;
+            background:chocolate;
+        }
+        td {
+            border: 1px solid yellow;
+        }
+        /*th2 {
+            border: 1px solid yellowgreen;
+        }*/
+        strong{
+            color:white
+        }
+        caption{
+            padding: 10px;
+            color:red;
+        }
+        /*fieldset{
+            background-image: url("photo/1984.jpg")
+        }*/
+        p{
+            font-family:'Trebuchet MS';
+        }
+        .for-p11-size{
+            border-radius:50%;
+        }
+        a{
+            color: #F00;
+            font-family:'Courier New', Courier, monospace;
+        }
+        @media(max-width=350px){
+            div{
+                
+            }
+        }
+        /*.background-color{
+            background-color:orange;
+        }*/
