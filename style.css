@@ -89,7 +89,7 @@ body {
             color: #F00;
             font-family:'Courier New', Courier, monospace;
         }
-        @media(min-width=403px){
+        @media(min-width=5.99in){
             p{
                 text-align:center;
             }
