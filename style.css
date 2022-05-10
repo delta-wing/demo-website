@@ -89,9 +89,9 @@ body {
             color: #F00;
             font-family:'Courier New', Courier, monospace;
         }
-        @media(max-width=350px){
-            div{
-                
+        @media(min-width=403px){
+            p{
+                text-align:center;
             }
         }
         /*.background-color{
